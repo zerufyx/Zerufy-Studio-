@@ -1,96 +1,47 @@
-# Zerufy Studio · Instagram, plan de 30 días
+# Zerufy Studio · Plan de Instagram 30 días (6 oct – 4 nov 2026)
 
-Arranque: lunes 5 de octubre de 2026. Hora de publicar: 7:00 p. m. (los dueños de negocio revisan el celular de noche).
-Meta: conversaciones por WhatsApp y DM, no seguidores.
-Las imágenes están en `brand/instagram/` con el número del post en el nombre.
-
----
-
-## Día 0 · Crear la cuenta (20 minutos)
-
-1. Instagram → tu perfil → toca tu usuario arriba → **Agregar cuenta → Crear cuenta nueva**.
-   Usuario: `zerufystudio`. Si está tomado: `zerufy.studio` o `zerufystudio.fl`.
-2. Configuración → **Tipo de cuenta y herramientas → Cambiar a cuenta profesional → Empresa**. Categoría: *Diseñador de sitios web*.
-3. Editar perfil:
-   - **Foto:** `00-foto-de-perfil.png`
-   - **Nombre** (máx. 30 caracteres, y es lo que sale en la búsqueda): `Zerufy Studio · Páginas web`
-   - **Bio:**
-     ```
-     Creamos experiencias digitales para tu negocio.
-     Sitios, catálogos, menús y reservas con tu panel.
-     Orlando, FL · Español e inglés
-     ↓ Mira el trabajo
-     ```
-   - **Enlaces:** `zerufystudio.com` (primero) y `wa.me/14072833785` con el título "WhatsApp".
-   - **Botones de contacto:** WhatsApp con +1 (407) 283-3785.
-4. No sigas a nadie todavía. Primero publicas, después sigues.
-
-## Destacadas
-
-Cinco: Trabajos · Servicios · Proceso · Clientes · Contacto. Portadas: `destacada-*.png`.
-Una destacada se crea desde una story, así que se van armando en la semana 1:
-- **Trabajos:** con la story `story-nuevo-trabajo.png` (día 1).
-- **Contacto:** una story con el sticker de enlace a WhatsApp (día 1).
-- **Servicios:** las stories donde compartes los posts 05 y 10.
-- **Proceso:** las diapositivas del carrusel 09.
-- **Clientes:** S91 House Grill (y cada cliente nuevo que entre).
-
-Para poner la portada: mantén presionada la destacada → Editar destacada → Editar portada → elige la imagen.
-
----
+Versión completa con el paso a paso: PDF "Zerufy-Plan-Instagram-30-dias.pdf". Las imágenes están en `brand/instagram/`. Se publica a las 7:00 p. m.
 
 ## Calendario
 
-| Día | Fecha | Post | Story | Extra |
+| Día | Fecha | Feed | Story | Extra |
 |---|---|---|---|---|
-| 1 | lun 5 oct | **01, 02 y 03** (en ese orden, 10 min entre cada uno) | Nuevo trabajo S91 + Contacto | Crear destacadas Trabajos y Contacto |
-| 2 | mar 6 | — | Comparte el post 02 | Empieza la rutina diaria |
-| 3 | mié 7 | **04** carrusel (7 imágenes) | Pregunta: "¿Cuántas veces al día te preguntan el precio?" | |
-| 4 | jue 8 | — | Detrás de cámara: captura del panel | |
-| 5 | vie 9 | **05** Zerufy Catálogo | Comparte el 05 → destacada Servicios | |
-| 6 | sáb 10 | — | Encuesta: "¿Tu negocio tiene link con precios? Sí / No" | |
-| 7 | dom 11 | — | Descanso | Revisa: visitas al perfil, clics al link, mensajes |
-| 8 | lun 12 | **06** Del chat al catálogo | Comparte el 06 | |
-| 9 | mar 13 | **Reel 1** | Comparte el reel | |
-| 10 | mié 14 | **07** Restaurantes | Comparte el 07 | |
-| 11 | jue 15 | — | Detrás de cámara | |
-| 12 | vie 16 | **08** I Brows | Comparte el 08 con link a la página del proyecto | |
-| 13 | sáb 17 | — | Pregunta abierta: "¿Qué vendes? Te digo qué página te serviría" | |
-| 14 | dom 18 | — | Descanso | Revisa números |
-| 15 | lun 19 | **09** carrusel (6 imágenes) | Comparte → destacada Proceso | |
-| 16 | mar 20 | **Reel 2** | Comparte el reel | |
-| 17 | mié 21 | **10** Zerufy Agenda | Comparte → destacada Servicios | |
-| 18 | jue 22 | — | Detrás de cámara | |
-| 19 | vie 23 | **11** El panel | Comparte el 11 | |
-| 20 | sáb 24 | — | Encuesta | |
-| 21 | dom 25 | — | Descanso | Revisa números |
-| 22 | lun 26 | **12** Empecemos | Comparte el 12 + Contacto | La primera serie queda completa |
-| 23 | mar 27 | **Reel 3** | Comparte el reel | |
-| 24 | mié 28 | Repost de 03 como reel corto (opcional) | Nuevo trabajo | |
-| 25 | jue 29 | — | `story-anuncio.png` | Opcional: promocionar esta story, $5 al día, 5 días, Orlando 25 km |
-| 26 | vie 30 | **Reel 4** | Comparte el reel | |
-| 27 | sáb 31 | — | Pregunta | |
-| 28 | dom 1 nov | — | Descanso | |
-| 29 | lun 2 nov | — | — | Revisión del mes: qué post trajo más mensajes |
-| 30 | mar 3 nov | — | — | Planear las siguientes 12 con lo que funcionó |
+| 1 | mar 6 oct | Post 01, 02 y 03, 10 min entre uno y otro. En el 03 invita a S91 como colaborador. | story-nuevo-trabajo.png con enlace a s91housegrill.com → destacada Trabajos. Story con enlace a WhatsApp → Contacto. | Manda tu perfil por WhatsApp a 30 contactos. |
+| 2 | mié 7 | — | Comparte el post 02 + encuesta: "¿Te preguntan el precio por DM?" Sí, todo el día / A veces. | Empieza la rutina de 20 min. |
+| 3 | jue 8 | Post 04 carrusel de 7. | Comparte el 04: "Guárdalo y revisa tu perfil". |  |
+| 4 | vie 9 | Reel 00 · Quién está detrás (tú a cámara). | Comparte el reel. |  |
+| 5 | sáb 10 | Post 05 Zerufy Catálogo. | Comparte el 05 → Servicios. |  |
+| 6 | dom 11 | — | story-pregunta.png + encuesta "Muchas / Pocas". | Domingo: revisa tus números. |
+| 7 | lun 12 | — | Detrás de cámara: foto de tu pantalla trabajando. |  |
+| 8 | mar 13 | Post 06 Del chat al catálogo. | Comparte el 06. |  |
+| 9 | mié 14 | Reel 01 · Catálogo por dentro. | Comparte el reel. |  |
+| 10 | jue 15 | Post 07 Restaurantes. | Comparte el 07. | Empieza a escribir a 5 negocios al día. |
+| 11 | vie 16 | — | Encuesta: "¿Tu negocio tiene página web?" Sí / Todavía no. | Anuncio 1 5 días. |
+| 12 | sáb 17 | Post 08 I Brows. | Comparte el 08 con enlace al proyecto en zerufystudio.com. |  |
+| 13 | dom 18 | — | Story ligera: tu café, tu escritorio, tu día. | Números. |
+| 14 | lun 19 | — | Detrás de cámara: un pedazo de una página que estás haciendo. |  |
+| 15 | mar 20 | Post 09 carrusel de 6. | Comparte el 09 → Proceso. | Termina el Anuncio 1. |
+| 16 | mié 21 | Reel 02 · Food truck. | Comparte el reel → Clientes. |  |
+| 17 | jue 22 | Post 10 Zerufy Agenda. | Comparte el 10 → Servicios. |  |
+| 18 | vie 23 | — | Caja de preguntas: "¿Qué vendes? Te digo qué página te serviría". | Contesta cada respuesta por DM. |
+| 19 | sáb 24 | Post 11 El panel. | Comparte el 11. |  |
+| 20 | dom 25 | — | Descanso. | Números. |
+| 21 | lun 26 | — | Detrás de cámara. |  |
+| 22 | mar 27 | Post 12 Empecemos. | Comparte el 12 + story con enlace a WhatsApp. | Fija 12, 03 y tu mejor reel. |
+| 23 | mié 28 | Reel 03 · Precio en 5 segundos. | Comparte el reel. | Anuncio 2 5 días. |
+| 24 | jue 29 | — | Encuesta: "¿Quién cambia los precios de tu página?" Yo / Le escribo a alguien. |  |
+| 25 | vie 30 | Post 13 3 errores. | Comparte el 13. |  |
+| 26 | sáb 31 | — | Story de Halloween: tu escritorio con algo de temporada. Gente real, no solo diseños. |  |
+| 27 | dom 1 nov | — | Descanso. | Números. |
+| 28 | lun 2 | Reel 04 · Reservas. | Comparte el reel. | Termina el Anuncio 2. |
+| 29 | mar 3 | Post 14 ¿Sales en Google? | Comparte el 14 + caja de preguntas. |  |
+| 30 | mié 4 | — | Agradece: "Un mes de Zerufy Studio. Gracias por estar aquí". | Revisión del mes y plan del mes 2. |
 
----
-
-## Rutina diaria (20 minutos)
-
-1. **10 min:** sigue a 10 negocios locales de Orlando que podrían ser clientes (food trucks, barberías, cejas y uñas, boutiques, restaurantes latinos). Comenta algo real en 5 de sus posts. Nada de "¡Te hago tu página!".
-2. **5 min:** una story.
-3. **5 min:** contesta todos los comentarios y mensajes del día.
-
-A quien te escriba, la respuesta corta: *"¡Hola! ¿Qué vendes y cómo te piden hoy tus clientes? Con eso te digo qué te serviría."* Después lo pasas a WhatsApp.
-
----
-
-## Textos de cada post (copiar y pegar)
-
-Máximo 5 hashtags por post. Usa siempre: `#orlando #paginaweb #negocioslatinos #emprendedores` + uno del tema.
+## Textos de los posts
 
 ### 01 · Manifiesto
+Imagen: `01-manifiesto.png`
+
 ```
 Creamos experiencias digitales para tu negocio.
 
@@ -99,12 +50,14 @@ Zerufy Studio diseña y construye la parte digital de tu negocio: el lugar donde
 Sitios, catálogos, menús y reservas. Cada proyecto se entrega con un panel para que tú lo manejes desde el celular.
 
 Orlando, FL · Español e inglés.
-Mira el trabajo en el link de la bio.
+👇 Cotiza gratis en el link de la bio.
 
 #orlando #paginaweb #negocioslatinos #emprendedores #zerufystudio
 ```
 
 ### 02 · Precios por DM
+Imagen: `02-precios-por-dm.png`
+
 ```
 Si cada venta empieza con "¿precio?", esto es para ti.
 
@@ -118,6 +71,8 @@ Escríbenos "CATÁLOGO" y te mostramos uno funcionando.
 ```
 
 ### 03 · S91 House Grill
+Imagen: `03-s91-house-grill.png` · Invita a S91 como colaborador.
+
 ```
 Este menú se actualiza desde un celular.
 
@@ -129,10 +84,10 @@ Cuando sube un precio o se acaba algo, la dueña lo cambia desde su panel.
 
 #orlando #paginaweb #negocioslatinos #foodtruck #menudigital
 ```
-Etiqueta la cuenta de S91 en la foto.
 
-### 04 · Carrusel: Lo que tu cliente busca
-Imágenes: `04-carrusel-1` a `04-carrusel-7`, en orden.
+### 04 · Carrusel: lo que tu cliente busca
+Imagen: `04-carrusel-1.png` · 7 imágenes: 04-carrusel-1 a 04-carrusel-7.
+
 ```
 5 cosas que tu cliente revisa antes de escribirte. Si falta una, se va. Desliza →
 
@@ -150,6 +105,8 @@ Guarda este post y revisa tu perfil hoy.
 ```
 
 ### 05 · Zerufy Catálogo
+Imagen: `05-zerufy-catalogo.png`
+
 ```
 Tu tienda, en un solo link.
 
@@ -157,12 +114,14 @@ Zerufy Catálogo: todos tus productos con fotos, tallas y precios. Tu cliente ar
 
 Desde tu panel subes productos, cambias precios y marcas lo que se agotó.
 
-Escríbenos "CATÁLOGO" y te lo mostramos funcionando.
+Escríbenos "CATÁLOGO" y te lo mostramos funcionando. La cotización es gratis.
 
 #orlando #paginaweb #negocioslatinos #emprendedores #tiendaonline
 ```
 
 ### 06 · Del chat al catálogo
+Imagen: `06-del-chat-al-catalogo.png`
+
 ```
 ¿Tu negocio se parece al de la izquierda o al de la derecha?
 
@@ -170,12 +129,14 @@ Así se ve la diferencia entre vender por mensajes y vender con tu propio catál
 
 Lo de la derecha es real: es el catálogo de Zerufy, la tienda.
 
-¿Cuál se parece a tu negocio hoy? Cuéntanos por WhatsApp.
+¿Cuál se parece a tu negocio hoy? Cuéntanos en los comentarios o cotiza gratis por WhatsApp.
 
 #orlando #paginaweb #negocioslatinos #emprendedores #catalogodigital
 ```
 
 ### 07 · Restaurantes
+Imagen: `07-restaurantes.png`
+
 ```
 Si cada vez que sube un precio reimprimes el menú, lee esto.
 
@@ -183,12 +144,14 @@ Un menú con fotos y precios que tu cliente abre con un QR o un link. Se acabó 
 
 Sin imprenta. Sin fotos viejas circulando.
 
-Escríbenos "MENÚ" por WhatsApp.
+Escríbenos "MENÚ" por WhatsApp y te cotizamos gratis.
 
 #orlando #restaurantesorlando #negocioslatinos #foodtruck #menudigital
 ```
 
 ### 08 · I Brows
+Imagen: `08-i-brows.png`
+
 ```
 Así puede verse la página de un estudio de cejas y pestañas.
 
@@ -201,8 +164,9 @@ Míralo completo en el link de la bio.
 #orlando #paginaweb #negocioslatinos #cejas #lashes
 ```
 
-### 09 · Carrusel: Así construimos
-Imágenes: `09-carrusel-1` a `09-carrusel-6`, en orden.
+### 09 · Carrusel: así construimos
+Imagen: `09-carrusel-1.png` · 6 imágenes: 09-carrusel-1 a 09-carrusel-6.
+
 ```
 Qué pasa desde que nos escribes hasta que tu página está en línea. Desliza →
 
@@ -213,12 +177,14 @@ Qué pasa desde que nos escribes hasta que tu página está en línea. Desliza �
 
 Y después seguimos: soporte y mantenimiento incluidos.
 
-¿Empezamos con el paso 01? Escríbenos.
+¿Empezamos con el paso 01? Cotiza gratis en el link de la bio.
 
 #orlando #paginaweb #negocioslatinos #emprendedores #diseñoweb
 ```
 
 ### 10 · Zerufy Agenda
+Imagen: `10-zerufy-agenda.png`
+
 ```
 Tu página puede agendar citas mientras duermes.
 
@@ -232,6 +198,8 @@ Escríbenos "AGENDA" por WhatsApp.
 ```
 
 ### 11 · El panel
+Imagen: `11-el-panel.png`
+
 ```
 La diferencia entre una página que te sirve y una que se queda vieja: quién la maneja.
 
@@ -245,39 +213,103 @@ Pregúntanos cómo se vería el panel de tu negocio.
 ```
 
 ### 12 · Empecemos
+Imagen: `12-empecemos.png` · Fíjalo en tu perfil.
+
 ```
 ¿Qué vendes? Cuéntanos y te decimos qué construir.
 
 Sitios, catálogos, menús y reservas con tu marca y tu panel. En español y en inglés, en Orlando y donde estés.
 
+👇 Cotiza gratis
 WhatsApp +1 (407) 283-3785
 zerufystudio.com
 
 #orlando #paginaweb #negocioslatinos #emprendedores #zerufystudio
 ```
 
----
+### 13 · 3 errores
+Imagen: `13-tres-errores.png`
 
-## Reels (grabación de pantalla del celular, 8 a 15 segundos)
+```
+Si tu perfil tiene uno de estos 3, estás perdiendo clientes sin saberlo.
 
-El gancho va escrito en pantalla en el primer segundo. Audio en tendencia, bajito. Portada: `portada-reel.png` o el titular del reel en el mismo estilo.
+01 El link de la bio no lleva a nada, o lleva a una página que no abre.
+02 "Precio por DM" en cada post. Mucha gente no pregunta: se va.
+03 Fotos viejas o sacadas de internet. Tu cliente quiere ver lo tuyo.
 
-| Reel | Qué grabas | Gancho en pantalla | Texto |
-|---|---|---|---|
-| 1 | zerufy.store: abrir, elegir producto, carrito, sale el mensaje de WhatsApp ya escrito | "Así me llega un pedido al WhatsApp" | "Un catálogo por dentro, en un minuto. ¿Lo quieres para tu negocio? Escríbenos CATÁLOGO." |
-| 2 | s91housegrill.com: QR → menú → pedido | "Este food truck ya no imprime menús" | "Menú con QR que se cambia desde el celular. Escríbenos MENÚ." |
-| 3 | El panel: cambiar un precio y verlo cambiar en la página | "Cambiar un precio: 5 segundos" | "Cada página se entrega con su panel. Tú la manejas." |
-| 4 | I Brows: elegir servicios, ver total, elegir hora | "Tu clienta reserva sola mientras atiendes" | "Reservas en línea para tu estudio. Escríbenos AGENDA." |
+¿Cuántos tiene el tuyo? Si quieres, lo revisamos gratis: mándanos tu @ por WhatsApp.
 
----
+#orlando #paginaweb #negocioslatinos #emprendedores #marketingdigital
+```
 
-## Stories listas
+### 14 · ¿Sales en Google?
+Imagen: `14-sales-en-google.png`
 
-- `story-nuevo-trabajo.png`: agrega sticker de enlace → s91housegrill.com
-- `story-pregunta.png`: agrega encuesta "Muchas / Pocas" en el espacio vacío del medio
-- `story-anuncio.png`: para el anuncio pagado opcional del día 25
-- `portada-reel.png`: portada del reel 1
+```
+Haz la prueba: busca en Google lo que vendes + tu ciudad.
 
-## Cómo saber si funciona (cada domingo)
+¿Apareces? ¿Con fotos, horario, reseñas y un link que funcione?
 
-Perfil → Panel profesional. Mira tres números: visitas al perfil, toques en el link y conversaciones nuevas. El post que más mensajes trajo es el tipo de post que se repite en el mes 2.
+Si no, el cliente que te estaba buscando le compra al de al lado.
+
+Arreglamos tu perfil de Google y te hacemos la página para que te encuentren. Cotiza gratis en el link de la bio.
+
+#orlando #paginaweb #negocioslatinos #emprendedores #negociolocal
+```
+
+## Reels
+
+### Reel 00 · Quién está detrás
+Portada: `reel-00-quien-esta-detras.png`
+- Qué grabar: Tú a cámara, de pecho para arriba, con luz de ventana de frente. Una sola toma de 15 a 20 segundos.
+- Gancho en pantalla: "¿Quién hace estas páginas?"
+- "Hola, soy Leo, de Zerufy Studio, aquí en Orlando. Hago páginas web, catálogos y menús digitales para negocios, y cada uno viene con un panel para que el dueño lo maneje desde el celular. Si tienes un negocio y todavía vendes por DM, escríbeme. La cotización es gratis."
+
+```
+Te presento Zerufy Studio. Páginas web, catálogos y menús para negocios de Orlando. 👇 Cotiza gratis en el link de la bio.
+```
+
+### Reel 01 · Catálogo por dentro
+Portada: `reel-01-catalogo.png`
+- Qué grabar: Graba la pantalla del celular: abres zerufy.store, tocas un producto, lo agregas al carrito y tocas pedir. Se abre WhatsApp con el mensaje ya escrito.
+- Gancho: "Así me llega un pedido al WhatsApp"
+- Sin voz. Música en tendencia.
+
+```
+Un catálogo por dentro, en un minuto. Del producto al pedido por WhatsApp, sin preguntar precios. ¿Lo quieres para tu negocio? Escríbenos "CATÁLOGO".
+```
+
+### Reel 02 · Food truck
+Portada: `reel-02-food-truck.png`
+- Qué grabar: Primero graba con la cámara el QR (en una hoja o en otra pantalla). Después, la pantalla del menú de s91housegrill.com: bajas por los platos y tocas pedir.
+- Gancho: "Este food truck ya no imprime menús"
+- Sin voz. Etiqueta la cuenta de S91.
+
+```
+Menú con QR que se cambia desde el celular. Se acabó un plato: agotado. Subió un precio: listo. Escríbenos "MENÚ".
+```
+
+### Reel 03 · Precio en 5 segundos
+Portada: `reel-03-precio.png`
+- Qué grabar: Pantalla dividida: primero el panel, cambias el precio de un plato y guardas. Después abres la página y ya aparece el precio nuevo.
+- Gancho: "Cambiar un precio: 5 segundos"
+- Sin voz.
+
+```
+Cada página que hacemos se entrega con su panel. Tú cambias precios, fotos y horarios. Sin esperar a nadie.
+```
+
+### Reel 04 · Reservas
+Portada: `reel-04-reservas.png`
+- Qué grabar: Graba la pantalla de la página de I Brows: eliges 2 servicios, ves el tiempo y el total, eliges día y hora, y confirmas.
+- Gancho: "Tu clienta reserva sola mientras atiendes"
+- Sin voz.
+
+```
+Reservas en línea para tu estudio: servicios, total, día y hora. La cita te llega por WhatsApp. Escríbenos "AGENDA".
+```
+
+## Anuncios
+
+- **Anuncio 1 (días 11–15):** promocionar el post 02 → Más mensajes → Orlando, 25 mi, 25–55 años, intereses de pequeña empresa → $7/día × 5 días.
+- **Anuncio 2 (días 23–27):** el reel con más vistas → Más visitas al perfil → mismo público → $7/día × 5 días.
