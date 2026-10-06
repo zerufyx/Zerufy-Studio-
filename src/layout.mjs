@@ -18,7 +18,17 @@ export function publicConfig(config) {
     webhook: i.webhook || null,
     ga4: i.ga4 || null,
     metaPixel: i.metaPixel || null,
+    clarity: i.clarity || null,
   };
+}
+
+// Etiquetas de verificación de dominio (Search Console, Meta). Solo si están configuradas.
+function verify(config) {
+  const v = (config.integrations && config.integrations.verification) || {};
+  return [
+    v.google ? `\n<meta name="google-site-verification" content="${esc(v.google)}">` : '',
+    v.meta ? `\n<meta name="facebook-domain-verification" content="${esc(v.meta)}">` : '',
+  ].join('');
 }
 
 function head(ctx, p) {
@@ -36,7 +46,7 @@ function head(ctx, p) {
 <meta name="description" content="${esc(p.description)}">
 <meta name="robots" content="${p.noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}">
 <link rel="canonical" href="${canonical}">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#0a0a0a">${verify(config)}
 <meta name="color-scheme" content="dark">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="format-detection" content="telephone=no">
@@ -92,7 +102,7 @@ function header(ctx) {
       <ul class="sheet-services">${sheetServices}</ul>
       <div class="sheet-actions">
         <a class="btn btn-primary btn-lg" href="${ctx.url('/contact/')}"><span>Empezar un proyecto</span>${icon('arrow', 'ic ic-go')}</a>
-        <a class="btn btn-ghost btn-lg" href="${wa(ctx.config)}" target="_blank" rel="noopener" data-track="whatsapp_click">${icon('whatsapp')}<span>WhatsApp</span></a>
+        <a class="btn btn-ghost btn-lg" href="${wa(ctx.config)}" target="_blank" rel="noopener">${icon('whatsapp')}<span>WhatsApp</span></a>
       </div>
     </div>
   </div>
@@ -119,7 +129,7 @@ function footer(ctx) {
         <li><a href="${ctx.url('/contact/')}">Empezar un proyecto</a></li>
       </ul></nav>
       <div><h2 class="foot-h">Contacto</h2><ul>
-        <li><a href="${wa(ctx.config)}" target="_blank" rel="noopener" data-track="whatsapp_click">WhatsApp <span class="nowrap">${esc(contact.whatsappDisplay)}</span></a></li>
+        <li><a href="${wa(ctx.config)}" target="_blank" rel="noopener">WhatsApp <span class="nowrap">${esc(contact.whatsappDisplay)}</span></a></li>
         ${contact.email ? `<li><a href="mailto:${esc(contact.email)}">${esc(contact.email)}</a></li>` : ''}
         ${contact.instagram ? `<li><a href="https://instagram.com/${esc(contact.instagram)}" target="_blank" rel="noopener">Instagram @${esc(contact.instagram)}</a></li>` : ''}
         ${contact.tiktok ? `<li><a href="https://tiktok.com/@${esc(contact.tiktok)}" target="_blank" rel="noopener">TikTok @${esc(contact.tiktok)}</a></li>` : ''}
@@ -127,7 +137,7 @@ function footer(ctx) {
       </ul></div>
     </div>
     <p class="foot-word" aria-hidden="true">Zerufy Studio<span class="dot">.</span></p>
-    <div class="foot-base"><span>© ${year} ${esc(ctx.config.legalName)}</span><span>Atendemos en español e inglés</span></div>
+    <div class="foot-base"><span>© ${year} ${esc(ctx.config.legalName)}</span><a href="${ctx.url('/privacidad/')}">Privacidad</a><span>Atendemos en español e inglés</span></div>
   </div>
 </footer>`;
 }
@@ -135,7 +145,7 @@ function footer(ctx) {
 function dock(ctx) {
   return `<div class="dock" data-dock>
   <a class="btn btn-primary" href="${ctx.url('/contact/')}"><span>Empezar un proyecto</span></a>
-  <a class="btn btn-ghost btn-icon" href="${wa(ctx.config)}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-track="whatsapp_click">${icon('whatsapp')}</a>
+  <a class="btn btn-ghost btn-icon" href="${wa(ctx.config)}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">${icon('whatsapp')}</a>
 </div>`;
 }
 

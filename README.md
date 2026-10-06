@@ -104,8 +104,27 @@ Un solo proyecto de Supabase para todos los negocios, con cuatro sistemas separa
 | Webhook (Make, Zapier, n8n) | Apagado (`integrations.webhook`) |
 | Google Analytics 4 | Apagado (`integrations.ga4`) |
 | Meta Pixel | Apagado (`integrations.metaPixel`) |
+| Microsoft Clarity (mapas de calor, grabaciones) | Apagado (`integrations.clarity`) |
+| Verificación Google Search Console | Apagado (`integrations.verification.google`) |
+| Verificación de dominio en Meta | Apagado (`integrations.verification.meta`) |
 
-Eventos que se miden: `lead_submit` (formulario enviado) y `whatsapp_click` (clic en cualquier botón de WhatsApp).
+Cada una se activa sola al pegar su código. Vacío = no se carga ningún script externo.
+
+### Embudo que se mide (GA4 · Meta · Clarity)
+
+| Evento | Cuándo | En Meta |
+|---|---|---|
+| `view_vertical` / `view_service` / `view_project` | Abre una página de tipo de negocio, servicio o caso | `ViewContent` |
+| `cta_click` | Toca un botón que lleva a /contact/ (con `location`: dónde estaba) | `CTAClick` |
+| `whatsapp_click` | Toca cualquier enlace de WhatsApp (con `location`) | `Contact` |
+| `form_start` | Toca el primer campo del formulario | `FormStart` |
+| `form_progress` | Llega a cada bloque del formulario (`step` 1–4) | `FormProgress` |
+| `form_error` | Intenta enviar con campos mal (`fields`) | `FormError` |
+| `generate_lead` | Formulario enviado | `Lead` |
+
+Origen del cliente: la primera visita guarda UTM, `fbclid`, `gclid`, referrer y página de entrada (30 días, en el navegador) y se manda con la solicitud a `leads.origin`. Así en Supabase se ve qué anuncio trajo cada cliente.
+
+Página `/privacidad/`: Meta y Google la piden para anuncios. Solo menciona las herramientas activadas.
 
 ## Pendientes
 

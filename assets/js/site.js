@@ -5,7 +5,20 @@
   var DS = w.DS || {};
   var reduce = w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Analítica (solo si está configurada) ---------- */
+  /* ---------- Medición (solo lo que esté configurado en site.config.mjs) ----------
+     Embudo que se mide, del primer vistazo a la solicitud:
+       page_view      → cada página (lo hace GA4 y el Pixel solos)
+       view_vertical  → abrió la página de su tipo de negocio (/negocios/…)
+       view_service   → abrió un servicio
+       view_project   → abrió un caso del portafolio
+       cta_click      → tocó "Empezar un proyecto" (dice desde qué parte)
+       whatsapp_click → tocó cualquier botón de WhatsApp (dice desde qué parte)
+       form_start     → empezó a llenar el formulario
+       form_progress  → llegó a cada bloque del formulario (1 a 5)
+       form_error     → intentó enviar y le faltaba algo (dice qué)
+       generate_lead  → envió el formulario (en Meta: Lead)
+     Clarity guarda las mismas marcas, así se pueden ver las grabaciones de quien
+     empezó el formulario y no lo terminó. */
   function loadScript(src) { var s = d.createElement('script'); s.async = true; s.src = src; d.head.appendChild(s); }
   if (DS.ga4) {
     w.dataLayer = w.dataLayer || [];
@@ -20,21 +33,81 @@
     w.fbq('init', DS.metaPixel);
     w.fbq('track', 'PageView');
   }
-  // Un solo punto para medir eventos: DS.track('lead_submit', {...})
+  if (DS.clarity) {
+    /* Microsoft Clarity base code */
+    (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); }; t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(w, d, 'clarity', 'script', DS.clarity);
+  }
+
+  // Equivalencias en Meta: eventos estándar para que sirvan en anuncios y audiencias
+  var META = { generate_lead: 'Lead', whatsapp_click: 'Contact', view_vertical: 'ViewContent', view_service: 'ViewContent', view_project: 'ViewContent' };
+  var META_CUSTOM = { cta_click: 'CTAClick', form_start: 'FormStart', form_progress: 'FormProgress', form_error: 'FormError' };
+
+  // Un solo punto para medir: DS.track('generate_lead', {...})
   DS.track = function (name, params) {
+    params = params || {};
     try {
-      if (w.gtag) w.gtag('event', name, params || {});
+      if (w.gtag) w.gtag('event', name, params);
       if (w.fbq) {
-        if (name === 'lead_submit') w.fbq('track', 'Lead');
-        else if (name === 'whatsapp_click') w.fbq('track', 'Contact');
-        else w.fbq('trackCustom', name, params || {});
+        if (META[name]) w.fbq('track', META[name], params);
+        else w.fbq('trackCustom', META_CUSTOM[name] || name, params);
+      }
+      if (w.clarity) {
+        w.clarity('event', name);
+        if (name === 'generate_lead') w.clarity('upgrade', 'lead');
       }
     } catch (e) { /* la medición nunca debe romper la página */ }
   };
+
+  // De qué parte de la página vino el toque: encabezado, menú, portada, barra fija, cierre…
+  function where(el) {
+    if (el.closest('.sheet')) return 'menu';
+    if (el.closest('[data-head]')) return 'header';
+    if (el.closest('[data-dock]')) return 'dock';
+    if (el.closest('.site-foot')) return 'footer';
+    var sec = el.closest('section, aside');
+    if (sec) return (sec.id || (sec.className || '').toString().split(' ')[0] || 'section');
+    return 'page';
+  }
   d.addEventListener('click', function (e) {
-    var t = e.target.closest('[data-track]');
-    if (t) DS.track(t.getAttribute('data-track'), { page: location.pathname });
+    var a = e.target.closest('a, [data-track]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var info = { location: where(a), page: location.pathname };
+    if (/wa\.me|api\.whatsapp\.com/.test(href)) DS.track('whatsapp_click', info);
+    else if (/\/contact\/?(#|$)/.test(href) && location.pathname.indexOf('/contact') !== 0) DS.track('cta_click', info);
+    else if (a.hasAttribute('data-track')) DS.track(a.getAttribute('data-track'), info);
   });
+
+  // Qué está mirando: tipo de negocio, servicio o caso del portafolio
+  (function () {
+    var path = location.pathname.replace(/\/index\.html$/, '/');
+    var h1 = d.querySelector('h1');
+    var name = h1 ? h1.textContent.replace(/\s+/g, ' ').trim() : path;
+    var m;
+    if ((m = path.match(/\/negocios\/([^/]+)\/$/))) DS.track('view_vertical', { content_name: name, content_category: m[1] });
+    else if ((m = path.match(/\/projects\/([^/]+)\/$/))) DS.track('view_project', { content_name: name, content_category: m[1] });
+    else if ((m = path.match(/\/(websites|menus|catalogs|booking|systems|apps)\/$/))) DS.track('view_service', { content_name: name, content_category: m[1] });
+  })();
+
+  // De dónde llegó la persona (anuncio, Instagram, Google…). Se guarda la primera
+  // vez y viaja con la solicitud del formulario, así se sabe qué anuncio trajo a cada cliente.
+  (function () {
+    var KEY = 'zs-origin', now = Date.now();
+    try {
+      var q = new URLSearchParams(location.search), utm = {};
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { if (q.get(k)) utm[k] = q.get(k).slice(0, 100); });
+      if (q.get('fbclid')) utm.fbclid = '1';
+      if (q.get('gclid')) utm.gclid = '1';
+      var saved = JSON.parse(localStorage.getItem(KEY) || 'null');
+      var fresh = !saved || now - saved.t > 30 * 864e5 || Object.keys(utm).length; // 30 días; un anuncio nuevo manda
+      if (fresh) {
+        var ref = d.referrer && d.referrer.indexOf(location.host) === -1 ? d.referrer.slice(0, 200) : '';
+        saved = { t: now, landing: location.pathname.slice(0, 120), referrer: ref, utm: utm };
+        localStorage.setItem(KEY, JSON.stringify(saved));
+      }
+      DS.origin = saved;
+    } catch (e) { DS.origin = null; }
+  })();
 
   /* ---------- Encabezado y menú ---------- */
   var head = d.querySelector('[data-head]');

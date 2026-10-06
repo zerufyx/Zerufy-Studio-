@@ -95,3 +95,10 @@ grant insert (name, business, business_type, email, phone, instagram, needs, bud
 -- alter table public.leads drop constraint if exists leads_instagram_check;
 -- alter table public.leads add constraint leads_instagram_check check (char_length(instagram) <= 200);
 -- grant insert (timeline) on public.leads to anon;
+
+-- ─────────────────────────────────────────────────────────────
+--  Origen del cliente (ya aplicado, migración leads_origin)
+-- ─────────────────────────────────────────────────────────────
+-- alter table public.leads add column if not exists origin jsonb
+--   check (origin is null or (jsonb_typeof(origin) = 'object' and pg_column_size(origin) < 2000));
+-- grant insert (origin) on public.leads to anon;

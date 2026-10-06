@@ -43,8 +43,18 @@ export default {
     // Webhook opcional (Make, Zapier, n8n) para mandar cada solicitud a
     // Notion, Airtable, un CRM, email o Google Sheets.
     webhook: '',
-    ga4: '',       // ej. G-XXXXXXXXXX
-    metaPixel: '', // ej. 123456789012345
+
+    // ── Medición ──────────────────────────────────────────────
+    // Cada una se activa sola al pegar su código. Vacío = no se carga nada.
+    ga4: '',       // Google Analytics 4 → "ID de medición", ej. G-XXXXXXXXXX
+    metaPixel: '', // Meta (Facebook/Instagram) Pixel → "ID del píxel", ej. 123456789012345
+    clarity: '',   // Microsoft Clarity (mapa de calor y grabaciones) → "Project ID", ej. abcd1234ef
+
+    // Verificación de propiedad del dominio (solo el código, sin la etiqueta <meta>)
+    verification: {
+      google: '', // Google Search Console → método "Etiqueta HTML" → valor de content="..."
+      meta: '',   // Meta Business → Seguridad de la marca → Dominios → valor de content="..."
+    },
   },
 
   // Rutas reservadas para crecer. "enabled: false" = no se publica todavía.

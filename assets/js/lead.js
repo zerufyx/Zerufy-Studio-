@@ -63,6 +63,21 @@
   });
   form.addEventListener('change', function (e) { if (e.target.name === 'needs' && needs().length) showError('needs', false); });
 
+  /* ---------- Medición del formulario: dónde se queda la gente ---------- */
+  var T = function (n, p) { if (DS.track) DS.track(n, p); };
+  var started = false, reached = {};
+  var groups = [].slice.call(form.querySelectorAll('.field-group'));
+  form.addEventListener('focusin', function (e) {
+    if (!started) { started = true; T('form_start', { page: location.pathname }); }
+    var g = e.target.closest('.field-group');
+    var i = groups.indexOf(g);
+    if (i > -1 && !reached[i]) {
+      reached[i] = true;
+      var leg = g.querySelector('legend');
+      T('form_progress', { step: i + 1, step_name: leg ? leg.textContent.replace(/\s+/g, ' ').replace(/^\d+/, '').trim().slice(0, 40) : '' });
+    }
+  });
+
   /* ---------- Mensaje para WhatsApp ---------- */
   function waText(lead) {
     var lines = ['Hola Zerufy Studio, quiero empezar un proyecto.', ''];
@@ -147,6 +162,7 @@
     alertBox.hidden = true;
     var bad = validate();
     if (bad.length) {
+      T('form_error', { fields: bad.join(',') });
       var target = bad[0] === 'needs' ? form.querySelector('input[name="needs"]') : form.elements[bad[0]];
       target.focus();
       alertBox.textContent = 'Revisa los campos marcados para continuar.';
@@ -169,12 +185,13 @@
       message: val('message') || null,
       plan: val('plan') || null,
       source_page: location.pathname + location.hash,
+      origin: DS.origin || null,
     };
 
     submit.setAttribute('aria-busy', 'true');
     submit.querySelector('[data-submit-label]').textContent = 'Enviando';
     dispatch(lead).then(function (outcome) {
-      if (DS.track) DS.track('lead_submit', { needs: lead.needs.join(','), budget: lead.budget || '' });
+      T('generate_lead', { needs: lead.needs.join(','), budget: lead.budget || '', timeline: lead.timeline || '' });
       showDone(lead, outcome);
     }).finally(function () {
       submit.removeAttribute('aria-busy');

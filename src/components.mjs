@@ -120,7 +120,7 @@ export function ctaBand(ctx, { q = '¿Tienes un negocio?', title = 'Construyamos
       ${btn(href, 'Empezar un proyecto', { size: 'lg', arrow: true, cls: 'magnetic' })}
       ${btn(ctx.url('/portfolio/'), 'Ver trabajos', { variant: 'ghost', size: 'lg', arrow: true, cls: 'magnetic' })}
     </div>
-    <p class="fin-wa">¿Prefieres escribir? <a class="link" href="${wa(ctx.config)}" target="_blank" rel="noopener" data-track="whatsapp_click">WhatsApp ${esc(ctx.config.contact.whatsappDisplay)}</a></p>
+    <p class="fin-wa">¿Prefieres escribir? <a class="link" href="${wa(ctx.config)}" target="_blank" rel="noopener">WhatsApp ${esc(ctx.config.contact.whatsappDisplay)}</a></p>
   </div>
 </section>`;
 }

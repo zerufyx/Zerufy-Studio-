@@ -24,7 +24,7 @@ import about from '../src/pages/about.mjs';
 import contact from '../src/pages/contact.mjs';
 import verticalPage, { verticalsIndex } from '../src/pages/vertical.mjs';
 import { verticals } from '../content/verticals.mjs';
-import { notFound, dashboard } from '../src/pages/misc.mjs';
+import { notFound, dashboard, privacy } from '../src/pages/misc.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mode = process.argv.includes('--preview') ? 'preview' : 'production';
@@ -41,6 +41,7 @@ const routes = [
   ...projects.map((p) => (ctx) => projectPage(ctx, p)),
   (ctx) => about(ctx),
   (ctx) => contact(ctx),
+  (ctx) => privacy(ctx),
 ];
 if (mode === 'production') routes.push((ctx) => notFound(ctx));
 if (config.futureRoutes.dashboard.enabled) routes.push((ctx) => dashboard(ctx));
