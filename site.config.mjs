@@ -53,7 +53,7 @@ export default {
     // Verificación de propiedad del dominio (solo el código, sin la etiqueta <meta>)
     verification: {
       google: 'IyaOE4ZxGq2j5-_Da-Z0bsfaVYZu7fDsM_JZyDEZuBc',// Google Search Console → método "Etiqueta HTML" → valor de content="..."
-      meta: '',   // Meta Business → Seguridad de la marca → Dominios → valor de content="..."
+      meta: 'fs6rd8v1rdrnrmsvtmny049y5blsvq', // Meta Business → Seguridad de la marca → Dominios → valor de content="..."
     },
   },
 
