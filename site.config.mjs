@@ -46,7 +46,7 @@ export default {
 
     // ── Medición ──────────────────────────────────────────────
     // Cada una se activa sola al pegar su código. Vacío = no se carga nada.
-    ga4: '',       // Google Analytics 4 → "ID de medición", ej. G-XXXXXXXXXX
+    ga4: 'G-QQ2XLWRQZX',     // Google Analytics 4 → "ID de medición", ej. G-XXXXXXXXXX
     metaPixel: '', // Meta (Facebook/Instagram) Pixel → "ID del píxel", ej. 123456789012345
     clarity: '',   // Microsoft Clarity (mapa de calor y grabaciones) → "Project ID", ej. abcd1234ef
 
