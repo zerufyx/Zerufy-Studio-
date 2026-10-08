@@ -82,6 +82,7 @@ node scripts/build.mjs --preview   # versión con rutas relativas (para vista pr
 | `CarpaShop` | CarpaShop, concepto: catálogo | GitHub Pages |
 | `ByKate` | By Kate, concepto (todavía no está en el portafolio) | GitHub Pages |
 | `Placidlux` | Placid Lux Esthetic, concepto (todavía no está en el portafolio) | GitHub Pages |
+| `JJ-` | JJTECH_73 (Boutique JJTECH), concepto: catálogo de relojes, tenis y tecnología (todavía no está en el portafolio) | GitHub Pages |
 | — | **Offsuite**, concepto: catálogo con carrito. **Todavía no tiene repo.** | Falta subirlo |
 
 ## Supabase
