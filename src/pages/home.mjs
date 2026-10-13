@@ -26,7 +26,7 @@ const heroCards = [
   { src: 'jircars-desktop-800', w: 800, h: 500, cls: 'hc-4 is-web', depth: 0.45 },
   { src: 's91-panel-edit', w: 540, h: 1169, cls: 'hc-5', depth: 1 },
   { src: 'ibrows-servicios', w: 540, h: 1169, cls: 'hc-6', depth: 0.7 },
-  { src: 'liz-catalogo', w: 540, h: 1169, cls: 'hc-7', depth: 0.6 },
+  { src: 'offsuite-catalogo', w: 540, h: 1169, cls: 'hc-7', depth: 0.6 },
 ];
 
 // La instalación: una misma pantalla que se transforma en cinco negocios
@@ -85,7 +85,7 @@ function moreCard(ctx, p) {
 export default function home(ctx) {
   const list = services.filter((s) => preview[s.key]);
   const [f1, f2, f3, f4, f5] = ['ibrows', 's91-house-grill', 'offsuite', 'jircars', 'zerufy'].map((k) => bySlug[k]);
-  const more = ['aureon', 'amh-store', 'alta-pinta', 'liz-boutique', 'carpashop', 'panel-zerufy'].map((k) => bySlug[k]);
+  const more = ['aureon', 'amh-store', 'carpashop', 'panel-zerufy'].map((k) => bySlug[k]);
   const thumbs = { fresa: 's91-thumb-fresa', mora: 's91-thumb-mora', pina: 's91-thumb-pina', nestea: 's91-thumb-nestea' };
   const th = (k) => `<img src="${ctx.asset(`/assets/img/work/${thumbs[k]}.webp`)}" alt="" width="160" height="160" loading="lazy" decoding="async">`;
 

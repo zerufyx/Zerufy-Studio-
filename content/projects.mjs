@@ -284,34 +284,6 @@ const concepts = [
     features: ['Colección por familia olfativa', 'Etiquetas de oferta y agotado', 'Carrito', 'Pedido confirmado por WhatsApp', 'Intro con la marca'],
   },
   {
-    slug: 'alta-pinta',
-    kind: 'concept',
-    name: 'Alta Pinta',
-    meta: 'Concepto / Ropa urbana',
-    sector: 'Ropa urbana',
-    type: 'Tienda con identidad de marca y pedido por WhatsApp',
-    categories: ['catalogs', 'branding'],
-    summary: 'Catálogo con identidad de marca propia: intro animada, categorías, favoritos y pedido armado que se envía por WhatsApp.',
-    tint: '#262626',
-    web: { src: 'altapinta-desktop', alt: 'Portada de Alta Pinta en computadora: “Viste con pinta”' },
-    phones: [{ src: 'altapinta-intro', alt: 'Entrada del catálogo de Alta Pinta con el logo a pincel' }, { src: 'altapinta-catalogo', alt: 'Productos del catálogo de Alta Pinta' }],
-    features: ['Intro animada con el logo', 'Categorías: camisetas, hoodies, gorras, tenis', 'Favoritos', 'Carrito', 'Pedido armado por WhatsApp'],
-  },
-  {
-    slug: 'liz-boutique',
-    kind: 'concept',
-    name: 'Liz Boutique',
-    meta: 'Concepto / Moda',
-    sector: 'Moda y accesorios',
-    type: 'Catálogo con ofertas y pedido por WhatsApp',
-    categories: ['catalogs'],
-    summary: 'Vestidos, zapatos, bolsos y accesorios en un catálogo con ofertas, novedades y pedido por WhatsApp.',
-    tint: '#4a2630',
-    web: { src: 'liz-desktop', alt: 'Portada de Liz Boutique en computadora con novedades' },
-    phones: [{ src: 'liz-intro', alt: 'Entrada del catálogo de Liz Boutique' }, { src: 'liz-catalogo', alt: 'Catálogo de Liz Boutique con ofertas y novedades' }],
-    features: ['Categorías con íconos', 'Ofertas y novedades', 'Favoritos', 'Carrito', 'Pedido por WhatsApp'],
-  },
-  {
     slug: 'carpashop',
     kind: 'concept',
     name: 'CarpaShop',
@@ -328,6 +300,6 @@ const concepts = [
 ];
 
 // Orden del portafolio: lo más fuerte primero.
-const ORDER = ['ibrows', 's91-house-grill', 'offsuite', 'jircars', 'zerufy', 'aureon', 'amh-store', 'alta-pinta', 'liz-boutique', 'carpashop', 'panel-zerufy'];
+const ORDER = ['ibrows', 's91-house-grill', 'offsuite', 'jircars', 'zerufy', 'aureon', 'amh-store', 'carpashop', 'panel-zerufy'];
 projects.push(...concepts);
 projects.sort((a, b) => ORDER.indexOf(a.slug) - ORDER.indexOf(b.slug));

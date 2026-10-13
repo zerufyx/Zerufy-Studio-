@@ -54,7 +54,7 @@ Success for the site: a visitor opens a real example, trusts it, and writes on W
 ## Evidence on Hand
 
 - Live clients: S91 House Grill (food truck, digital menu + panel, s91housegrill.com), Zerufy (owner's own luxury resale store, catalog + cart + panel + cash/inventory tools, zerufy.store), AMH Store (catalog + cart + panel, amhstore.store).
-- Proposals that were nearly closed but did not sign (may be shown only as proposals/concepts, never as clients): Jircars (car lot, Valencia, Carabobo), Aureon (luxury fragrances), Alta Pinta (catalog), Liz Boutique (catalog), CarpaShop (phone accessories). Source: repos zerufyx/<name>.
+- Proposals that were nearly closed but did not sign (may be shown only as proposals/concepts, never as clients): Jircars (car lot, Valencia, Carabobo), Aureon (luxury fragrances), CarpaShop (phone accessories). Source: repos zerufyx/<name>. Alta Pinta and Liz Boutique are never shown on the site (owner's decision).
 - Screenshots in `assets/img/work/`, including desktop captures of the concepts. `booking-demo.webp` is a demonstration screen built by the studio (no booking client yet); always labeled as a demo.
 - Concepts are shown as work with the label "Concepto", strongest first (owner's call).
 - No testimonials, metrics, or client counts exist. Do not invent them.

@@ -77,8 +77,8 @@ node scripts/build.mjs --preview   # versión con rutas relativas (para vista pr
 | `ibrows` | I Brows, concepto: sitio con reservas | GitHub Pages |
 | `Jircars` | Jircars, concepto: concesionario | GitHub Pages |
 | `AUREON` | Aureon, concepto: catálogo | GitHub Pages |
-| `ALTAPINTA` | Alta Pinta, concepto: catálogo | GitHub Pages |
-| `LIZ-BOUTIQUE` | Liz Boutique, concepto: catálogo | GitHub Pages |
+| `ALTAPINTA` | Alta Pinta, concepto: catálogo (no se muestra en el portafolio) | GitHub Pages |
+| `LIZ-BOUTIQUE` | Liz Boutique, concepto: catálogo (no se muestra en el portafolio) | GitHub Pages |
 | `CarpaShop` | CarpaShop, concepto: catálogo | GitHub Pages |
 | `ByKate` | By Kate, concepto (todavía no está en el portafolio) | GitHub Pages |
 | `Placidlux` | Placid Lux Esthetic, concepto (todavía no está en el portafolio) | GitHub Pages |

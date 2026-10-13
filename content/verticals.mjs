@@ -107,7 +107,7 @@ export const verticals = [
       { t: 'Tú cierras la venta', d: 'Confirmas, cobras y entregas como trabajes.' },
     ],
     control: ['Productos y fotos', 'Precios y ofertas', 'Tallas y agotados', 'Categorías'],
-    examples: ['offsuite', 'zerufy', 'amh-store', 'aureon', 'alta-pinta'],
+    examples: ['offsuite', 'zerufy', 'amh-store', 'aureon'],
     faq: [
       { q: '¿Puedo subir productos yo mismo?', a: 'Sí. Desde tu panel subes fotos, precios y tallas en segundos, desde el celular.' },
       { q: '¿El catálogo cobra por mí?', a: 'No. El pedido te llega por WhatsApp y el pago lo acuerdas tú con tu cliente.' },
