@@ -83,7 +83,7 @@ node scripts/build.mjs --preview   # versión con rutas relativas (para vista pr
 | `ByKate` | By Kate, concepto (todavía no está en el portafolio) | GitHub Pages |
 | `Placidlux` | Placid Lux Esthetic, concepto (todavía no está en el portafolio) | GitHub Pages |
 | `JJ-` | JJTECH_73 (Boutique JJTECH), concepto: catálogo de relojes, tenis y tecnología (todavía no está en el portafolio) | GitHub Pages |
-| `Luz-glow` | Luzé Glow, propuesta: servicios de cejas con cita por Instagram o WhatsApp (no está en el portafolio) | GitHub Pages (vista previa) |
+| `Luzeglow` | Luzé Glow, propuesta: servicios de cejas con cita por Instagram o WhatsApp (no está en el portafolio) | GitHub Pages (vista previa) |
 | — | **Offsuite**, concepto: catálogo con carrito. **Todavía no tiene repo.** | Falta subirlo |
 
 ## Supabase
