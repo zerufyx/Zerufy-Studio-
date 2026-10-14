@@ -88,7 +88,7 @@ Todo se publica en **Cloudflare Pages** (cuenta zerufyx@gmail.com) desde su repo
 | `ibrows` | I Brows, sitio con reservas (referencia de Citas) | — | ibrows.pages.dev |
 | `ByKate` | By Kate · La Silla Roja, reservas | Reservas (`bk_*`) | bykate.pages.dev |
 | `Placidlux` | Placid Lux Esthetic, spa facial con agenda | — | placidlux.pages.dev |
-| `Luzeglow` | Luzé Glow Brows, cejas con cita por Instagram o WhatsApp. Se le está mostrando a un prospecto | — | zerufyx.github.io/Luzeglow (todavía no está en Cloudflare) |
+| `Luzeglow` | Luzé Glow Brows, cejas con cita por Instagram o WhatsApp. Se le está mostrando a un prospecto | — | luzeglow.pages.dev |
 | `Jircars` | Concesionario | — | jircars.pages.dev |
 | `CarpaShop` | Catálogo de accesorios | Tiendas, 5 | carpashop.pages.dev |
 | `AUREON` | Catálogo de fragancias | Sin conectar | aureon-c1a.pages.dev |
@@ -97,6 +97,8 @@ Todo se publica en **Cloudflare Pages** (cuenta zerufyx@gmail.com) desde su repo
 | `PARCHITA-` | Parchita, catálogo de carteras | Sin conectar | parchita.pages.dev |
 | `LBA-Store-` | Luisba Store, catálogo de gorras | Sin conectar | lba-store.pages.dev |
 | — | **Offsuite**, catálogo con carrito. **Todavía no tiene repo.** | — | Falta subirlo |
+
+**Visibilidad en GitHub (13 oct 2026):** privados PARCHITA-, LBA-Store-, JJ-, Jircars, ALTAPINTA, AUREON y Placidlux. Públicos por ahora: los sitios en línea (hasta apagar GitHub Pages), Luzeglow, LIZ-BOUTIQUE, ByKate, ibrows y CarpaShop (se están mostrando). Un repo privado deja de abrir en zerufyx.github.io, pero sigue en su `.pages.dev`.
 
 **Retirado:** `zerufy-v2`, copia vieja de la tienda Zerufy. Su página solo redirige a zerufy.store. Se puede archivar.
 
